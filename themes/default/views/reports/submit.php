@@ -33,6 +33,19 @@
 				<input type="hidden" name="form_id" id="form_id" value="<?php echo $id?>">
 			</div>
 			<div class="report_left">
+
+
+				<?php Event::run('ushahidi_action.report_form_location', $id); ?>
+				<div class="report_row">
+					<h4>
+						What location do you want to report on? (use the map to do this)
+
+					</h4>
+					<?php print form::input('location_name', $form['location_name'], ' class="text long"'); ?>
+				</div>
+
+
+			
 				<div class="report_row">
 					<?php if(count($forms) > 1): ?>
 					<div class="row">
@@ -45,6 +58,9 @@
 						</h4>
 					</div>
 					<?php endif; ?>
+
+
+
 
 					<h4>How does this place make you feel? <span class="required">*</span></h4>
 					<div class="report_category" id="categories">
@@ -134,16 +150,6 @@
 
 			</div>
 			<div class="report_right">
-
-
-				<?php Event::run('ushahidi_action.report_form_location', $id); ?>
-				<div class="report_row">
-					<h4>
-						What location do you want to report on? (use the map to do this)
-
-					</h4>
-					<?php print form::input('location_name', $form['location_name'], ' class="text long"'); ?>
-				</div>
 
 				<?php if (count($cities) > 1): ?>
 				<div class="report_row">
