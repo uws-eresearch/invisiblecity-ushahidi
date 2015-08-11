@@ -34,7 +34,6 @@
 			</div>
 			<div class="report_left">
 
-
 				<?php Event::run('ushahidi_action.report_form_location', $id); ?>
 				<div class="report_row">
 					<h4>
@@ -44,8 +43,6 @@
 					<?php print form::input('location_name', $form['location_name'], ' class="text long"'); ?>
 				</div>
 
-
-			
 				<div class="report_row">
 					<?php if(count($forms) > 1): ?>
 					<div class="row">
@@ -58,9 +55,6 @@
 						</h4>
 					</div>
 					<?php endif; ?>
-
-
-
 
 					<h4>How does this place make you feel? <span class="required">*</span></h4>
 					<div class="report_category" id="categories">
@@ -283,10 +277,13 @@
 				</div>
 
 
+			</div>
+
 				<div class="report_row">
 					<input name="submit" type="submit" value="<?php echo Kohana::lang('ui_main.reports_btn_submit'); ?>" class="btn_submit" />
 				</div>
-			</div>
+
+			
 		</div>
 		<?php print form::close(); ?>
 		<!-- end report form block -->
