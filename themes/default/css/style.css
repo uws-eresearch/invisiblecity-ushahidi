@@ -1095,7 +1095,7 @@ label.error {
     border: 0;
 }
 
-.report_left{ float:left; width:450px; margin:10px 10px; padding:0 0 10px; }
+.report_left{ float:left; width:430px; margin:10px 10px; padding:0 0 10px; }
 .report_left table { width: 100%; }
 .report_left table tr th { text-align: left; }
 
@@ -1129,6 +1129,9 @@ td.w-03 { border-bottom:1px dotted #E8E4DB; text-transform:capitalize; }
 
 .divider1 {
     padding-top: 10px;
+}
+
+.divider1 h2 {
     margin-bottom: -14px;
 }
 
@@ -1145,7 +1148,7 @@ td.w-03 { border-bottom:1px dotted #E8E4DB; text-transform:capitalize; }
 .report_category ul li{ overflow:hidden; list-style:none; }
 .report_category ul li label{ color:#555; }
 
-.report_row .custom-field-option {  display: block; }
+.report_row .custom-field-option {  display: block; margin-bottom: 7px;}
 .report_row .custom-field-option input {
     float: left;
     margin-right: 10px;
