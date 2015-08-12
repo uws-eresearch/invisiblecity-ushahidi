@@ -518,7 +518,7 @@ class Json_Controller extends Template_Controller {
 
 		// Get Category Info
 		$category_title = "All Categories";
-		$category_color = "#990000";
+		$category_color = "#a9a9a9";
 		if ($category_id > 0)
 		{
 			$category = ORM::factory("category", $category_id);
