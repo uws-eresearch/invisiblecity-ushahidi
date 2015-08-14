@@ -276,6 +276,10 @@
 					<?php print form::input('incident_title', $form['incident_title'], ' class="text long"'); ?>
 				</div>
 
+				<div class="report_row">
+					Want to submit more reports later? <a href="<?php echo url::site();?>/login/?newaccount" target="_blank">Sign up</a> to create an account!
+				</div>
+
 
 			</div>
 
