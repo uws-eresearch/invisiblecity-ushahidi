@@ -37,7 +37,7 @@
 				<?php Event::run('ushahidi_action.report_form_location', $id); ?>
 				<div class="report_row">
 					<h4>
-						What location do you want to report on? (use the map to do this)
+						What is the name of the location you want to report on? (click and drag the red icon on the map to choose the location on the map)
 
 					</h4>
 					<?php print form::input('location_name', $form['location_name'], ' class="text long"'); ?>
@@ -283,7 +283,7 @@
 					<input name="submit" type="submit" value="<?php echo Kohana::lang('ui_main.reports_btn_submit'); ?>" class="btn_submit" />
 				</div>
 
-			
+
 		</div>
 		<?php print form::close(); ?>
 		<!-- end report form block -->
