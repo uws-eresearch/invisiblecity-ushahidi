@@ -2149,3 +2149,12 @@ div.ci_checkin {
 	line-height: 12px;
 	color: #a1a1a1;
 }
+
+
+.divider1 {
+    padding-top: 10px;
+}
+
+.divider1 h2 {
+    margin-bottom: -14px;
+}

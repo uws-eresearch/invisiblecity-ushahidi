@@ -45,8 +45,6 @@ class reports_Core {
 		// Create validation object
 		$post = Validation::factory($post)
 				->pre_filter('trim', TRUE)
-				->add_rules('incident_title','required', 'length[3,200]')
-				->add_rules('incident_description','required')
 				->add_rules('incident_date','required','date_mmddyyyy')
 				->add_rules('incident_hour','required','between[1,12]')
 				->add_rules('incident_minute','required','between[0,59]')
