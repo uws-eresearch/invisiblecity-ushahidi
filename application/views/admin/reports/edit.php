@@ -72,22 +72,6 @@
 							// Action::report_pre_form_admin - Runs right before report form is rendered
 							Event::run('ushahidi_action.report_pre_form_admin', $id);
 							?>
-							<?php if ($show_messages) { ?>
-							<div class="row">
-								<h4 style="margin:0;padding:0;"><a href="#" id="messages_toggle" class="show-messages"><?php echo Kohana::lang('ui_main.show_messages');?></a>&nbsp;</h4>
-								<!--messages table goes here-->
-			                    <div id="show_messages">
-									<?php
-									foreach ($all_messages as $message) {
-										echo "<div class=\"message\">";
-										echo "<strong><u>" . $message->message_from . "</u></strong> - ";
-										echo $message->message;
-										echo "</div>";
-									}
-									?>
-								</div>
-							</div>
-							<?php } ?>
 							<div class="row">
 								<h4><?php echo Kohana::lang('ui_main.form');?> <span>(<?php echo Kohana::lang('ui_main.select_form_type');?>)</span></h4>
 								<span class="sel-holder">
@@ -97,12 +81,6 @@
 								<div id="form_loader" style="float:left;"></div>
 							</div>
 							<div class="row">
-								<h4><?php echo Kohana::lang('ui_main.title');?> <span class="required">*</span></h4>
-								<?php print form::input('incident_title', $form['incident_title'], ' class="text title"'); ?>
-							</div>
-							<div class="row">
-								<h4><?php echo Kohana::lang('ui_main.description');?> <span><?php echo Kohana::lang('ui_main.include_detail');?>.</span> <span class="required">*</span></h4>
-								<span class="allowed-html"><?php echo html::allowed_html(); ?></span>
 								<?php print form::textarea('incident_description', $form['incident_description'], ' rows="12" cols="40"') ?>
 							</div>
 

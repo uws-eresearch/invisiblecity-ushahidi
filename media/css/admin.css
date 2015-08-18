@@ -22,7 +22,7 @@ h1{
 h2{
 	padding:12px 18px 0;
 	font-size:20px;
-	height:28px;
+	line-height: 1.3em;
 	font-weight:normal;
 	color:#9b0000;
 	border:1px solid #fff;
@@ -2638,4 +2638,8 @@ div.dp-popup td.disabled {
 	font-size: 10px;
 	line-height: 12px;
 	color: #a1a1a1;
+}
+
+.divider1 {
+	margin-top: 40px;
 }
