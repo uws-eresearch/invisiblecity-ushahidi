@@ -33,7 +33,8 @@
 				<input type="hidden" name="form_id" id="form_id" value="<?php echo $id?>">
 			</div>
 			<div class="report_left">
-
+<?php print form::input('incident_title', $form['incident_title'], ' class="text long hidden" style="display:none"'); ?>
+			<?php print form::textarea('incident_description', $form['incident_description'], ' rows="10" class="textarea long"  style="display:none"') ?>
 				<?php Event::run('ushahidi_action.report_form_location', $id); ?>
 				<div class="report_row">
 					<h4>
