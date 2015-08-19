@@ -145,7 +145,7 @@
 				</ul>
 				<!-- /Layers -->
 			<?php endif; ?>
-			
+
 			<?php
 			// Action::main_sidebar_post_filters - Add Items to the Entry Page after filters
 			Event::run('ushahidi_action.main_sidebar_post_filters');
@@ -153,68 +153,23 @@
 
 			<br />
 
-			<!-- additional content -->
-			<?php if (Kohana::config('settings.allow_reports')): ?>
-				<div class="additional-content">
+
+				<!--div class="additional-content">
 					<h5><?php echo Kohana::lang('ui_main.how_to_report'); ?></h5>
 
 					<div class="how-to-report-methods">
 
-						<!-- Phone -->
-						<?php if ( ! empty($phone_array)): ?>
-						<div>
-							<?php echo Kohana::lang('ui_main.report_option_1'); ?>
-							<?php foreach ($phone_array as $phone): ?>
-								<?php echo $phone; ?><br />
-							<?php endforeach; ?>
-						</div>
-						<?php endif; ?>
-						
-						<!-- External Apps -->
-						<?php if (count($external_apps) > 0): ?>
-						<div>
-							<strong><?php echo Kohana::lang('ui_main.report_option_external_apps'); ?>:</strong><br/>
-							<?php foreach ($external_apps as $app): ?>
-								<a href="<?php echo $app->url; ?>"><?php echo $app->name; ?></a><br/>
-							<?php endforeach; ?>
-						</div>
-						<?php endif; ?>
+<p><b>By sending a text to 0123 456 789</b><br>
+Include the place name, how it makes you feel and why, and a picture (optional)</p>
+<br>
+<p><b><a href="<?php echo url::site()."reports/submit";?>">By filling this form on our website</a></b><br>
 
-						<!-- Email -->
-						<?php if ( ! empty($report_email)): ?>
-						<div>
-							<strong><?php echo Kohana::lang('ui_main.report_option_2'); ?>:</strong><br/>
-							<a href="mailto:<?php echo $report_email?>"><?php echo $report_email?></a>
-						</div>
-						<?php endif; ?>
 
-						<!-- Twitter -->
-						<?php if ( ! empty($twitter_hashtag_array)): ?>
-						<div>
-							<strong><?php echo Kohana::lang('ui_main.report_option_3'); ?>:</strong><br/>
-							<?php foreach ($twitter_hashtag_array as $twitter_hashtag): ?>
-								<span>#<?php echo $twitter_hashtag; ?></span>
-								<?php if ($twitter_hashtag != end($twitter_hashtag_array)): ?>
-									<br />
-								<?php endif; ?>
-							<?php endforeach; ?>
-						</div>
-						<?php endif; ?>
-
-						<!-- Web Form -->
-						<div>
-							<a href="<?php echo url::site().'reports/submit/'; ?>">
-								<?php echo Kohana::lang('ui_main.report_option_4'); ?>
-							</a>
-						</div>
 
 					</div>
 
-				</div>
-			<?php endif; ?>
+				</div-->
 
-			<!-- / additional content -->
-			
 			<?php
 			// Action::main_sidebar - Add Items to the Entry Page Sidebar
 			Event::run('ushahidi_action.main_sidebar');
@@ -233,7 +188,6 @@
 						<strong><?php echo Kohana::lang('ui_main.filters'); ?></strong>
 						<ul>
 							<li><a id="media_0" class="active" href="#"><span><?php echo Kohana::lang('ui_main.all'); ?></span></a></li>
-							<li><a id="media_4" href="#"><span><?php echo Kohana::lang('ui_main.news'); ?></span></a></li>
 							<li><a id="media_1" href="#"><span><?php echo Kohana::lang('ui_main.pictures'); ?></span></a></li>
 							<li><a id="media_2" href="#"><span><?php echo Kohana::lang('ui_main.video'); ?></span></a></li>
 						</ul>
@@ -267,6 +221,21 @@
 	<div class="content-blocks clearingfix">
 		<ul class="content-column">
 			<?php blocks::render(); ?>
+
+			<li class="howtoreport">
+									<h5><?php echo Kohana::lang('ui_main.how_to_report'); ?></h5>
+
+					<div class="how-to-report-methods">
+
+<p><b>By sending a text to +61 (0) 481 070 810</b><br>
+Include the place name, how it makes you feel and why, and a picture (optional)</p>
+<br>
+<p><b><a href="<?php echo url::site()."reports/submit";?>">By filling this form on our website</a></b><br>
+
+
+
+					</div>
+			</li>
 		</ul>
 	</div>
 	<!-- /content blocks -->
