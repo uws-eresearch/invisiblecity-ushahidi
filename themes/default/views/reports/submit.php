@@ -143,6 +143,17 @@
 						<?php print form::input('person_first', $form['person_first'], ' class="text long"'); ?>
 					</div>
 
+
+				<div class="report_row">
+
+					<h4>What do you want to call this report? <span class="required">*</span> </h4>
+					<?php print form::input('incident_title', $form['incident_title'], ' class="text long"'); ?>
+				</div>
+
+				<div class="report_row">
+					Want to submit more reports later? <a href="<?php echo url::site();?>/login/?newaccount" target="_blank">Sign up</a> to create an account!
+				</div>
+
 			</div>
 			<div class="report_right">
 
@@ -270,16 +281,6 @@
 
 				<?php Event::run('ushahidi_action.report_form_after_video_link'); ?>
 
-
-				<div class="report_row">
-
-					<h4>What do you want to call this report? <span class="required">*</span> </h4>
-					<?php print form::input('incident_title', $form['incident_title'], ' class="text long"'); ?>
-				</div>
-
-				<div class="report_row">
-					Want to submit more reports later? <a href="<?php echo url::site();?>/login/?newaccount" target="_blank">Sign up</a> to create an account!
-				</div>
 
 
 			</div>
