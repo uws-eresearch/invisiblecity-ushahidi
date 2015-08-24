@@ -73,6 +73,10 @@
 							Event::run('ushahidi_action.report_pre_form_admin', $id);
 							?>
 
+						<div class="row">
+								<?php print form::input('incident_title', $form['incident_title'], ' class="text title"'); ?>
+							</div>
+
 							<div class="row">
 								<?php print form::textarea('incident_description', $form['incident_description'], ' rows="12" cols="40"') ?>
 							</div>
