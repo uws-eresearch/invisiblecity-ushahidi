@@ -176,6 +176,9 @@ class Json_Controller extends Template_Controller {
 		
 		$media_type = (isset($_GET['m']) AND intval($_GET['m']) > 0)? intval($_GET['m']) : 0;
 		
+		$incident_model = new Incident_Model();
+		$all_categories = $incident_model::get_active_categories();
+
 		foreach ($incidents as $marker)
 		{
 			// Handle both reports::fetch_incidents() response and actual ORM objects
@@ -199,6 +202,34 @@ class Json_Controller extends Template_Controller {
 			// Get thumbnail
 			$thumb = "";
 			$media = ORM::factory('incident', $marker->id)->media;
+			
+			//Invisible Cities customisation
+			//Requires to uncluster markers and present them in their category color
+		
+			// get category for incident, we only visualise the first category present in the incident - gotcha but ok
+			$incident_category_result = ORM::factory('incident_category')
+				->where(array('incident_id'=>$marker->id))
+				->find();
+			if( array_key_exists($incident_category_result->category_id, $all_categories) ) {
+				//get category details
+				$category_details = $all_categories[$incident_category_result->category_id];
+				//get the color
+				$color = $category_details[1];	
+			}
+			
+			//code for debugging
+			// $categories = array();
+			// foreach ($incident_categories_result as $category) {
+			// 	// $category_details = ORM::factory('category', $category->category_id);
+			// 	$category_details = $all_categories[$category->category_id];
+
+			// 	$color = $category_details[1];
+			// 	array_push($categories, array(
+			// 		'category_id' => $category->category_id,
+			// 		'color' => $category_details[1]
+			// 		));
+			// }
+
 			if ($media->count())
 			{
 				foreach ($media as $photo)
