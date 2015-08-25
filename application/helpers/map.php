@@ -437,6 +437,23 @@ class map_Core {
 		);
 		$layers[$layer->name] = $layer;
 
+		// Stamen Toner
+		$layer = new stdClass();
+		$layer->active = TRUE;
+		$layer->name = 'stamen_toner';
+		$layer->openlayers = "XYZ";
+		$layer->title = 'Stamen Toner Map';
+		$layer->description = 'Black and White Toner Map';
+		$layer->api_url = '';
+		$layer->data = array(
+			'baselayer' => TRUE,
+			'attribution' => 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+			'url' => 'http://tile.stamen.com/toner/${z}/${x}/${y}.png',
+			'type' => '',
+			'transitionEffect' => 'resize',
+		);
+		$layers[$layer->name] = $layer;
+
 		// Add Custom Layers
 		// Filter::map_base_layers
 		Event::run('ushahidi_filter.map_base_layers', $layers);
