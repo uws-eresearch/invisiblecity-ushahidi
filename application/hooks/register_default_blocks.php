@@ -21,7 +21,7 @@ class reports_block {
 		$content->incidents = ORM::factory('incident')
 			->with('location')
 			->where('incident_active', '1')
-			->limit('10')
+			->limit('3')
 			->orderby('incident_date', 'desc')
 			->find_all();
 
