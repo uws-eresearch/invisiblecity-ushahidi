@@ -61,9 +61,9 @@
 			var autoreply;
 			$("#" + field).attr("value", "");
 			if (id == 1) {
-				autoreply = "Thank you for sending a message to Ushahidi. What is the closest town or city for your last message?";
+				autoreply = "a.	Thanks! Would you also like to tell us if/how you want to see this place changed? Also what’s your age?";
 			}else if (id == 2) {
-				autoreply = "Thank you for sending a message to Ushahidi. Can you send more information on the incident?"
+				autoreply = "We’ll add your inputs to the map on @ www.invisiblecity.org.au/ What username should we use for you? Also, can we contact u again in the future about this project?"
 			};
 			$("#" + field).attr("value", autoreply);		
 		}
