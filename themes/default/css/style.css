@@ -2181,3 +2181,132 @@ div.ci_checkin {
 .divider1 h2 {
     margin-bottom: -14px;
 }
+
+a {
+	background:none;
+	color:#3c3a3b;
+	text-decoration:underline;
+}
+a:hover {
+	color:#9d9d9c;
+}
+div#header {
+	display:none;
+}
+div#header_nav {
+	display:none;
+}
+div#mainmenu {
+	background:none;
+	background-color:transparent;
+}
+div#mainmenu > ul > li > a {
+	color:#3c3a3b;
+	text-decoration:none;
+}
+div#mainmenu > ul > li > a.active {
+	background: none;
+}
+div#mainmenu a,
+div#mainmenu a:link {
+	background:none;
+	color:#000000;
+}
+div#mainmenu a:hover {
+	background:none;
+	color:#9d9d9c;
+	border:none;
+}
+div#mainmenu > ul > li:last-child {
+	display:none;
+}
+div.filters ul li a,
+div.filters ul li a:link  {
+	color:#3c3a3b;
+	background:none;
+	text-decoration:none;
+}
+div.filters ul li a:hover, div.filters ul li a.active {
+	background:none;
+	background-color:transparent;
+	text-decoration:underline;
+}
+a.active {
+	background-color:none;
+}
+div#footer {
+	display:none;
+}
+div.feedicon {
+	display:none;
+}
+div.cat-filters a {
+	text-decoration:none;
+}
+div.cat-filters a:hover {
+	text-decoration:underline;
+}
+ul.category-filters {
+	border:none;
+}
+ul.category-filters {
+	background: #DAD9D7;
+}
+ul.category-filters > li > a {
+	border:none;	
+}
+ul#category_switch > li > a.active {
+	background:none;
+	border:none;
+}
+ul#category_switch > li > a:hover {
+	background:none;
+	color:#FFFFFF;
+	border:none;
+}
+table.table-list > tbody > tr > td a {
+	color:#3c3a3b;
+	text-decoration:none;
+}
+table.table-list > tbody > tr > td a:hover {
+	text-decoration:underline	
+}
+table.table-list > tbody > tr > td {
+	border-bottom:1px solid #9d9d9c;
+}
+table.table-list thead th {
+	border-bottom-width:1px;
+}
+table.table-list thead th {
+	border-bottom-style:solid;
+}
+table.table-list thead th {
+	border-bottom-color:#9d9d9c;
+}
+table.table-list thead th {
+	border-top-width:1px;
+}
+table.table-list thead th {
+	border-top-style:solid;
+}
+table.table-list thead th {
+	border-top-color:#9d9d9c;
+}
+div.how-to-report-methods a:hover {
+	color:#9d9d9c;
+}
+a#timelineMoreLink,
+a#timelineMoreLink:link {
+	color:#3c3a3b;
+	text-decoration:underline;
+	background:none;
+}
+a#timelineMoreLink:hover {
+	color:#9d9d9c;
+}
+a.more:hover {
+	color:#9d9d9c;
+}
+body {
+	color:#3c3a3b;
+}
