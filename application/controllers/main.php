@@ -446,7 +446,7 @@ class Main_Controller extends Template_Controller {
 		    ? $marker_opacity * 0.1
 		    : 0.9;
 
-		$this->themes->js->marker_stroke_width = ($marker_stroke_width >=1 AND $marker_stroke_width <= 5)
+		$this->themes->js->marker_stroke_width = ($marker_stroke_width >=0 AND $marker_stroke_width <= 5)
 		    ? $marker_stroke_width
 		    : 2;
 

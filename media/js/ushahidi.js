@@ -181,35 +181,7 @@
 						}
 						else
 						{
-							feature_count = feature.attributes.count;
-							if (feature_count > 10000)
-							{
-								return 45;
-							}
-							else if (feature_count > 5000)
-							{
-								return 30;
-							}
-							else if (feature_count > 1000)
-							{
-								return 22;
-							}
-							else if (feature_count > 100)
-							{
-								return 15;
-							}
-							else if (feature_count > 10)
-							{
-								return 10;
-							}
-							else if (feature_count >= 2)
-							{
-								return 5;
-							}
-							else
-							{
-								return 1;
-							}
+							return Ushahidi.markerStrokeWidth;
 						}
 					},
 					color: function(feature) {

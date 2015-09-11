@@ -20,7 +20,7 @@
 Ushahidi.baseURL = "<?php echo url::site(); ?>";
 Ushahidi.markerRadius = <?php echo $marker_radius; ?>;
 Ushahidi.markerOpacity = <?php echo $marker_opacity; ?>;
-Ushahidi.markerStokeWidth = <?php echo $marker_stroke_width; ?>;
+Ushahidi.markerStrokeWidth = <?php echo $marker_stroke_width; ?>;
 Ushahidi.markerStrokeOpacity = <?php echo $marker_stroke_opacity; ?>;
 
 // Default to most active month

@@ -26,7 +26,7 @@ $config['marker_opacity'] = "8";
  * Values from 0 to 5
  * Default: 2
  */
-$config['marker_stroke_width'] = "2";
+$config['marker_stroke_width'] = "0";
 
 
 /**
@@ -34,7 +34,7 @@ $config['marker_stroke_width'] = "2";
  * Values from 1 (very transparent) to 10 (Opaque)
  * Default: 9
  */
-$config['marker_stroke_opacity'] = "3";
+$config['marker_stroke_opacity'] = "1";
 
 
 /**
