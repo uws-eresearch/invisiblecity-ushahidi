@@ -57,7 +57,7 @@
 					</div>
 					<?php endif; ?>
 
-					<h4>How does this place make you feel? <span class="required">*</span></h4>
+					<h4>How does this place make you feel? (choose up to 3 emotions)<span class="required">*</span></h4>
 					<div class="report_category" id="categories">
 					<?php
 						$selected_categories = (!empty($form['incident_category']) AND is_array($form['incident_category']))
