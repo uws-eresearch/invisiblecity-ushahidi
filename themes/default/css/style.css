@@ -2182,6 +2182,10 @@ div.ci_checkin {
     margin-bottom: -14px;
 }
 
+/*force circle marker strokes to 0 width*/
+circle {
+    stroke-width: 0 !important;
+}
 a {
 	background:none;
 	color:#3c3a3b;
