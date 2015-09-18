@@ -51,7 +51,7 @@ $lang = array(
 	) ,
 	'incident_category' => array(
 		'numeric' => 'The "Categories" field does not appear to contain a valid category.',
-		'required' => 'The "Categories" field is required.',
+		'required' => 'You must select how the place makes you feel.',
 	) ,
 	'incident_date' => array(
 		'date_ddmmyyyy' => 'The date field does not appear to contain a valid date.',
@@ -87,7 +87,7 @@ $lang = array(
 	) ,
 	'incident_title' => array(
 		'length' => 'The "Report Title" field must be at least 3 and no more 200 characters long.',
-		'required' => 'The "Report Title" field is required.',
+		'required' => 'You must give this report a name.',
 		'csrf' => 'Possible CSRF attack. Did you really mean to create/edit a report?',
 	) ,
 	'incident_verified' => array(
@@ -110,7 +110,7 @@ $lang = array(
 	) ,
 	'location_name' => array(
 		'length' => 'The "Location Name" field must be at least 3 and no more 200 characters long.',
-		'required' => 'The "Location Name" field is required.',
+		'required' => 'You must provide the name of the location.',
 	) ,
 	'longitude' => array(
 		'between' => 'The longitude field does not appear to contain a valid longitude.',
