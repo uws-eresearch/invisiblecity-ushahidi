@@ -210,21 +210,6 @@
 	<div class="content-blocks clearingfix">
 		<ul class="content-column">
 			<?php blocks::render(); ?>
-
-			<li class="howtoreport">
-									<h5><?php echo Kohana::lang('ui_main.how_to_report'); ?></h5>
-
-					<div class="how-to-report-methods">
-
-<p><b>By sending a text to +61 (0) 481 070 810</b><br>
-Include the place name, how it makes you feel and why, and a picture (optional)</p>
-<br>
-<p><b><a href="<?php echo url::site()."reports/submit";?>">By filling this form on our website</a></b><br>
-
-
-
-					</div>
-			</li>
 		</ul>
 	</div>
 	<!-- /content blocks -->
