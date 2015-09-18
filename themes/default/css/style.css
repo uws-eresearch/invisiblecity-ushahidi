@@ -562,7 +562,7 @@ ul.content-column{
 }
 ul.content-column li {
     float: left;
-    width: 590px !important;
+    width: 944px !important;
     padding: 0;
     margin: 15px 0 0 0;
     display: inline;
@@ -958,7 +958,7 @@ table.table-list thead th{
 }
 
 table.table-list thead th.title{
-    width: 40%;
+    width: 18%;
 }
 
 table.table-list thead th.location{
@@ -1024,7 +1024,7 @@ div.incident-notation ul li{
 
 .more{
     font-weight: bold;
-    margin-left: 242px;
+    margin-left: 420px;
     margin-top: 24px;
     background-color: #dbd8d6;
     color: #333;

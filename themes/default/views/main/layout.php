@@ -10,7 +10,7 @@
 
 		<!-- right column -->
 		<div id="right" class="clearingfix">
-			
+
 			<?php
 			// Action::main_sidebar_pre_filters - Add Items to the Entry Page before filters
 			Event::run('ushahidi_action.main_sidebar_pre_filters');
@@ -84,7 +84,7 @@
 								    ? url::convert_uploaded_to_abs($child_info[2])
 								    : NULL;
 								$child_description = html::escape(Category_Lang_Model::category_description($child));
-								
+
 								$color_css = 'class="category-icon swatch" style="background-color:#'.$child_color.'"';
 								if ($child_info[2] != NULL)
 								{
@@ -113,7 +113,7 @@
 			<?php if ($layers): ?>
 				<!-- Layers (KML/KMZ) -->
 				<div class="layers-filters clearingfix">
-					<strong><?php echo Kohana::lang('ui_main.layers_filter');?> 
+					<strong><?php echo Kohana::lang('ui_main.layers_filter');?>
 						<span>
 							[<a href="javascript:toggleLayer('kml_switch_link', 'kml_switch')" id="kml_switch_link">
 								<?php echo Kohana::lang('ui_main.hide'); ?>
@@ -133,7 +133,7 @@
 						$layer_link = ( ! $layer_url)
 						    ? url::base().Kohana::config('upload.relative_directory').'/'.$layer_file
 						    : $layer_url;
-						
+
 						echo '<li>'
 						    . '<a href="#" id="layer_'. $layer .'">'
 						    . '<span class="swatch" style="background-color:#'.$layer_color.'"></span>'
@@ -151,33 +151,22 @@
 			Event::run('ushahidi_action.main_sidebar_post_filters');
 			?>
 
-			<br />
+			<br /><br /><br />
 
+			<h5>How to Report</h5>
 
-				<!--div class="additional-content">
-					<h5><?php echo Kohana::lang('ui_main.how_to_report'); ?></h5>
+			<div class="how-to-report-methods">
 
-					<div class="how-to-report-methods">
+				<p><b>By sending a text to +61 (0) 481 070 810</b><br>
+				Include the place name, how it makes you feel and why, and a picture (optional)</p>
+				<br>
+				<p><b><a href="<?php echo url::site()."reports/submit";?>">By filling this form on our website</a></b><br>
 
-<p><b>By sending a text to 0123 456 789</b><br>
-Include the place name, how it makes you feel and why, and a picture (optional)</p>
-<br>
-<p><b><a href="<?php echo url::site()."reports/submit";?>">By filling this form on our website</a></b><br>
+			</p></div>
 
-
-
-					</div>
-
-				</div-->
-
-			<?php
-			// Action::main_sidebar - Add Items to the Entry Page Sidebar
-			Event::run('ushahidi_action.main_sidebar');
-			?>
-	
 		</div>
 		<!-- / right column -->
-	
+
 		<!-- content column -->
 		<div id="content" class="clearingfix">
 			<div class="floatbox">
@@ -201,7 +190,7 @@ Include the place name, how it makes you feel and why, and a picture (optional)<
 				</div>
 				<!-- / filters -->
 
-				<?php								
+				<?php
 				// Map and Timeline Blocks
 				echo $div_map;
 				echo $div_timeline;
