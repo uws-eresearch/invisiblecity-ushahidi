@@ -57,7 +57,7 @@
 					</div>
 					<?php endif; ?>
 
-					<h4>How does this place make you feel? (choose up to 3 emotions)<span class="required">*</span></h4>
+					<h4>How does this place make you feel? <span class="max-check-rule">(choose up to 3 emotions)</span><span class="required">*</span></h4>
 					<div class="report_category" id="categories">
 					<?php
 						$selected_categories = (!empty($form['incident_category']) AND is_array($form['incident_category']))
@@ -66,6 +66,17 @@
 
 						echo category::form_tree('incident_category', $selected_categories, 2);
 						?>
+						<script>
+							// Enforce max 3 category rule.
+							$('.category-column').find('.check-box').click(function(e){
+								if($('.category-column').find('input.check-box:checked').length > 3) {
+									// We hit the max so don't check the one that was clicked
+									$(this).prop("checked",false);
+									// Gentle reminder that only three are allowed
+									$('.max-check-rule').fadeTo('fast', 0.25).fadeTo('fast', 1);
+								}
+							});
+						</script>
 					</div>
 				</div>
 
