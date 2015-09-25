@@ -49,7 +49,7 @@ class reports_Core {
 				->add_rules('incident_hour','required','between[1,12]')
 				->add_rules('incident_minute','required','between[0,59]')
 				->add_rules('incident_ampm','required')
-				->add_rules('incident_title','required','between[1,255]');
+				->add_rules('incident_title','required');
 			
 		if (isset($post->incident_ampm) AND $post->incident_ampm != "am" AND $post->incident_ampm != "pm")
 		{

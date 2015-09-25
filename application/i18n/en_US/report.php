@@ -89,6 +89,7 @@ $lang = array(
 		'length' => 'The "Report Title" field must be at least 3 and no more 200 characters long.',
 		'required' => 'You must give this report a name.',
 		'csrf' => 'Possible CSRF attack. Did you really mean to create/edit a report?',
+		'between' => 'The "Report Title" is either too short or too long.',
 	) ,
 	'incident_verified' => array(
 		'between' => 'Please enter a valid value for Verify This Report.',
